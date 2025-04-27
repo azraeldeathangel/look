@@ -2,7 +2,7 @@
 #include <windows.h>
 
 // Function to read and display the contents of a file
-void readfile(const char *filename) {
+void look(const char *filename) {
     HANDLE filehandle;
     DWORD bytesread;
     char buffer[4096]; // Buffer to store file contents before printing
@@ -39,6 +39,6 @@ int main(int argc, char const *argv[]) {
         return 1; // Exit with error code
     }
 
-    readfile(argv[1]); // Call the function to read the file
+    look(argv[1]); // Call the function to read the file
     return 0; // Successful execution
 }
